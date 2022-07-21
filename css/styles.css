@@ -91,9 +91,9 @@ body {
  }
  .header .container {
     justify-content: space-between;
-    
+ }
+ .header {
     border-bottom: 1px solid #ECECEC;
-
  }
 .site-nav,
 .contact-links {
@@ -330,9 +330,14 @@ body {
 /* Portfolio */
 
 /* Filter buttons */
-.main-container > .container {
+.main-container {
+    margin-top: 94px;
+    margin-bottom: 94px;
+}
+.main-container .container:nth-child(3) {
     margin-top: 50px;
 }
+
 .filters {
     justify-content: center ;
 }
