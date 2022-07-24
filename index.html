@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="./css/modern-normalize" />
+    <link rel="stylesheet" href="./css/modern-normalize.css" />
     <link rel="stylesheet" href="./css/styles.css" />
     <!-- Google Fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -40,7 +40,8 @@
       </section>
       <section class="content">
         <h2 class="visually-hidden">Особенности</h2>
-        <ul class="container list">
+        <div class="container">
+        <ul class="list">
           <li class="content-item">
             <h3 class="content-header">Внимание к деталям</h3>
             <p class="content-text">
@@ -70,10 +71,12 @@
             </p>
           </li>
         </ul>
+        </div>
       </section>
-      <section class="work-gallery">
+      <section class="section work-gallery">
         <h2 class="subtitle">Чем мы занимаемся</h2>
-        <ul class="list container">
+        <div class="container">
+        <ul class="list">
           <li class="work-item">
             <img
               src="./images/image1.jpg"
@@ -93,10 +96,12 @@
             />
           </li>
         </ul>
+      </div>
       </section>
-      <section class="team">
+      <section class="section team">
         <h2 class="subtitle">Наша команда</h2>
-        <ul class="container list">
+        <div class="container">
+        <ul class="list">
           <li class="list team-item">
             <img
               class="team-img"
@@ -134,13 +139,12 @@
             <p class="team-text">UI Designer</p>
           </li>
         </ul>
+        </div>
       </section>
     </main>
     <footer class="footer">
       <div class="footer-container">
-        <a href="./index.html" class="logo link logo-footer"
-        ><span class="logo-part">Web</span>Studio</a
-      >
+        <a href="./index.html" class="logo link logo-footer"><span class="logo-part">Web</span>Studio</a>
       <address>
         <ul class="list footer-list">
           <li class="footer-item">
