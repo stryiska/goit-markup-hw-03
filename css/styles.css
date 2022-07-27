@@ -17,8 +17,6 @@
 /* Global styles */
 
  .container {
-    display: flex;
-
     max-width: 1200px;
 
     padding-left: 15px;
@@ -93,6 +91,7 @@ body {
  /* Header */
  
  .header .container {
+    display: flex;
     justify-content: space-between;
  }
  .header {
@@ -157,9 +156,6 @@ body {
     background-color: var(--dark-background-color);
 }
 .action-group {
-    display: block;
-    box-sizing: border-box;
-
     width: 696px;
     
     margin-left: auto;
@@ -211,6 +207,9 @@ body {
 .content {
     padding-top: 94px;
 }
+.content .container {
+    display: flex;
+}
 .content-list {
     display: inherit;
 
@@ -245,9 +244,9 @@ body {
     line-height: 1.71;
 }
 /* Work Gallery */
-.work-gallery .container {
-    display: inline-block;
-}
+/* .work-gallery .container {
+    display: block;
+} */
 
 .work-gallery .subtitle {
     display: block;
@@ -255,6 +254,10 @@ body {
 .gallery-list {
     display: flex;
 
+    max-width: 100%;
+
+    margin-left: auto;
+    margin-right: auto;
     margin-top: 50px;
    
     justify-content: space-between;
@@ -269,14 +272,14 @@ body {
     background-color: var(--light-background-color);
 }
 .team .container {
-    display: inline-block;
+    justify-content: center;
 }
 .team-list {
     display: flex;
     
     margin-top: 50px;
 
-    justify-content: space-between;
+    /* justify-content: space-between; */
 }
 .team .subtitle {
     display: block;
@@ -293,6 +296,9 @@ body {
                 0px 1px 1px rgba(0, 0, 0, 0.14), 
                 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
+}
+.team-item:not(:last-child) {
+    margin-right: 30px;
 }
 
 .team-text-group {
@@ -351,6 +357,11 @@ body {
     color: rgba(255, 255, 255, 0.6);
 }
 /* Portfolio */
+.portfolio-container {
+    display: block;
+
+    justify-content: center;
+}
 
 /* Filter buttons */
 
@@ -388,11 +399,7 @@ body {
 }
 
 /* Project list */
-.portfolio-container {
-    display: block;
 
-    justify-content: center;
-}
 .grid-container {
     display: flex;
     flex-wrap: wrap;
@@ -415,7 +422,6 @@ body {
 .item-title {
     font-weight: 700;
     font-size: 18px;
-    
     line-height: 2;
     letter-spacing: 0.06em;
     
@@ -423,8 +429,6 @@ body {
 }
 .item-type {
     margin-top: 4px;
-    
     font-size: 16px;
-    
     line-height: 1.88;
 }
